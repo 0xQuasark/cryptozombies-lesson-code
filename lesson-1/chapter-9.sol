@@ -1,4 +1,5 @@
-pragma solidity ^0.4.25;
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.19;
 
 contract ZombieFactory {
 
@@ -12,7 +13,7 @@ contract ZombieFactory {
 
     Zombie[] public zombies;
 
-    function _createZombie(string _name, uint _dna) private {
+    function _createZombie(string memory _name, uint _dna) private {
         zombies.push(Zombie(_name, _dna));
     }
 
